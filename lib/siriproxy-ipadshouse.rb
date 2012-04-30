@@ -17,7 +17,7 @@ class SiriProxy::Plugin::iPadsHouse < SiriProxy::Plugin
     #if you have custom configuration options, process them here!
   end
   
-  listen_for /ipadshouse/i do |phrase|
+  listen_for /Ordinateur/i do |phrase|
 	  ipaNews = "today"
 	  ipad(ipadNews) #in the function, request_completed will be called when the thread is finished
 	end
